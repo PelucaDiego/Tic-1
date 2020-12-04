@@ -1,0 +1,84 @@
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/* Input Forms*/
+input[type="text"], input[type="password"]{
+  outline: none;
+  padding: 20px;
+  display: block;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  margin: 20px auto;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  color: #fff;
+  background: #0098cb;
+  width: 320px;
+  margin: 20px auto;
+  margin-top: 0;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #00b8eb;
+}
+
+/* Header */
+header {
+  border-bottom: 2px solid #eee;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  color: #333;
+}
+/*
+<script>
+  function revisar(x) {
+    alert("juas");
+    <?php
+      $consulta="select * from datos order by id desc;";
+      $results=pg_query($consulta);
+      $linea[x]=pg_fetch_array($results,null,PGSQL_ASSOC);
+      echo "alert('".$linea[x]["humedad"]."');";
+      if ($linea[x]["humedad"]>85) {
+      echo "alert('".$linea[x]["humedad"]."');";
+    }
+    pg_free_result($results);
+    ?>
+    setTimeout('revisar(x+1)',10000);
+}
+</script>
+<script>
+function myFunction() {
+  <?php
+      $humedad=rand(650,850)/10;
+      $temperatura=rand(0,40)/10;
+      $velocidadaire=rand(5,20)/10;
+      $consulta="insert into datos (humedad,temperatura,velocidadaire) values (".$humedad.",".$temperatura.",".$velocidadaire.");";
+      $results=pg_query($consulta);
+      if($results){
+print_r("Inserción completa!");
+}
+else{
+echo "Ocurri&oacute; un error! ".pg_last_error();
+}
+?>
+}
+  <button type="button" click="myFunction()">Generar datos dentro de los parametros.</button>
+<div >
+</div>
+</script>
+*/
